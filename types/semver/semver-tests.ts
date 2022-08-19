@@ -325,6 +325,8 @@ ver = comp.semver;
 str = comp.operator;
 str = comp.value;
 comp.parse(str);
+comp.parse(str, { loose: true });
+comp.parse(str, { loose: true, includePrerelease: false });
 bool = comp.test(ver);
 bool = comp.intersects(new semver.Comparator(str));
 bool = comp.intersects(new semver.Comparator(str), bool);

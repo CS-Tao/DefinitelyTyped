@@ -6,7 +6,7 @@ import semver = require('../index');
  */
 declare function parse(
     version: string | SemVer | null | undefined,
-    optionsOrLoose?: boolean | semver.Options,
+    optionsOrLoose?: boolean | semver.RangeOptions,
 ): SemVer | null;
 
 export = parse;
